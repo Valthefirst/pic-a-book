@@ -7,7 +7,7 @@ from google import genai
 
 app = Flask(__name__)
 CORS(app)
-client = genai.Client(api_key="AIzaSyAAY3_bAgSyiEfdNxZSZ38VUYtGRrS1ilg")
+client = genai.Client(api_key="${GEMINI_API_KEY}")
 
 @app.route('/image', methods=["POST"])
 def trip_reponse():
